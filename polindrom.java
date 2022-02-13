@@ -3,14 +3,12 @@ public class Main {
     public static void main(String[] args) {
         String sonuc ="";
 
-        for(int i = 10; i<=100; i++)
-        {
+        for(int i = 10; i<=100; i++) {
             Long sayi = Long.parseLong(String.valueOf(i));
             String tmpSonuc = "";
 
             tmpSonuc += "İlk Sayı: " + sayi;
-            while(!sayi.equals(tersiniBul(sayi)))
-            {
+            while(!sayi.equals(tersiniBul(sayi))) {
                 tmpSonuc += "\nTersi: " + tersiniBul(sayi);
                 sayi += tersiniBul(sayi);
                 tmpSonuc += "\nYeni Sayı: " + sayi;
